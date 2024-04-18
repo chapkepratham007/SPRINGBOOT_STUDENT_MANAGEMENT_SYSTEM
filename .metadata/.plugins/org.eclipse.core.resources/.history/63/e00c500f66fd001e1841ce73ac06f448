@@ -1,0 +1,26 @@
+package com.example.STUDENT_MANAGEMENT.controller;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.example.STUDENT_MANAGEMENT.service.StudentService;
+
+
+import org.springframework.ui.Model;
+@org.springframework.stereotype.Controller
+public class Controller {
+	public StudentService service;
+	@Autowired
+    public Controller(StudentService service) {
+        this.service = service;
+    }
+	@GetMapping("/home")
+	public String home() {
+		return "home"; //html file view page
+	}
+	
+	@GetMapping("/students")
+	public String getAllStudents(Model model) {
+		model.addAttribute("students",service.getAllStudents());
+		return "students";
+	}
+}

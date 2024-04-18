@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<h1>Student Registration Form</h1>
+	<form>
+		<div form-group>
+			<label>Student First Name</label>
+			<input type="text" name="firstName" id="firstName" placeholder="Enter First Name"/>
+			
+		</div>
+		
+		<div form-group>
+			<label>Student Last Name</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Enter Last Name"/>
+			
+		</div>
+		
+		<div form-group>
+			<label>Email</label>
+			<input type="email" name="email" id="email" placeholder="Enter email"/>
+			
+		</div>
+	</form>
+</body>
+</html>

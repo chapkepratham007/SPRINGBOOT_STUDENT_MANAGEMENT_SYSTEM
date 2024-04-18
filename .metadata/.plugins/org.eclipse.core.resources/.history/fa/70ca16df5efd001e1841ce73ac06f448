@@ -1,0 +1,5 @@
+package com.example.STUDENT_MANAGEMENT.entity;
+
+public class Student {
+
+}
